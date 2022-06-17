@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url("img/背景1.jpeg");
+	 background-repeat: no-repeat;
+   background-position:50% 50%;
+	 background-attachment: fixed;
+	 background-size: cover;
+}
+
+header {
+    width: 90%; /* 横幅90% */
+    padding: 15px 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+header .heading { /* headerタグ内のheadingクラスにのみ反映される */
+    font-size: 32px;
+}
+
+.nav-list {
+    text-align: center;
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.nav-list-item {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.main-visual {
+    width: 100%; /* 横幅いっぱい */
+    height: 300px; /* 高さ300px */
+    background-image: url(img/header.jpeg);
+    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+    background-position: center; /* 背景画像を中央に配置 */
+}
+
+.main-visual-content {
+    width: 40%; /* 横幅40% */
+    height: 300px; /* 親の高さに揃える */
+}
+
+main {
+    width: 800px; /* 横幅800px */
+    margin: 0 auto; /* 要素の中央揃え */
+    padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+}
+  
+.summary {
+    width: 100%;
+    margin-right: 30px; /* 領域の右側余白 */
+    text-align: center;
+}
+  
+.summary-heading {
+    border-bottom: 8px solid #f7f7f7;
+    text-align: center;
+    line-height: 0.6;
+}
+
+.summary-member{
+    border-bottom: 8px solid #f7f7f7;
+    line-height: 0.6;
+}
+
+.member{
+    width:100%;
+}
+
+.box {
+    margin-bottom: 50px;
+    width: 100%;
+    max-height: 210px;                /* BOXの高さ           */
+    /* ▼ FlexBoxの定義 */
+    display: flex;                 /* FlexBox定義         */
+    justify-content: space-between;               /* 揃えの定義          */
+    flex-wrap: wrap;                 /* 折り返し定義        */
+}
+
+.box div {
+    box-sizing: border-box;           /* 罫線も含む長さ      */
+    background: #B0C4DE;              /* BOXの背景色         */
+    border: 2px solid #35557f;    /* 枠線の指定          */
+    margin-left: 10px;
+    margin-bottom: 50px;
+}

@@ -58,21 +58,27 @@ main {
     width: 100%;
     margin-right: 30px; /* 領域の右側余白 */
     text-align: center;
+    margin-bottom: 20px;
 }
   
 .summary-heading {
     border-bottom: 8px solid #f7f7f7;
     text-align: center;
     line-height: 0.6;
+    margin: 10px;
+    padding: 10px;
 }
 
 .summary-member{
     border-bottom: 8px solid #f7f7f7;
     line-height: 0.6;
+    margin: 10px;
 }
 
 .member{
     width:100%;
+    margin: 20px 20px;
+    padding:20px auto;
 }
 
 .box {

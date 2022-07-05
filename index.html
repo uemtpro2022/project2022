@@ -1,120 +1,197 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ja">
-    <head>
-        <meta charset="UTF-8">
-        <link rel="stylesheet" href="style.css" />
-        <title>上松プロジェクト2022</title>
-    </head>
+<head>
 
-    <body>
-        <header>
-            <h1 class="heading">
-                上松プロジェクト2022<br>
-                -MY Voice Mate-
-            </h1>
-        </header>
 
-        <nav>
-            <ul class="nav-list">
-              <li class="nav-list-item">
-                <a href="index.html">Home</a>
-                <a href="https://uemtpro2022.tumblr.com/">Tumblr</a>
-              </li>
-            </ul>
-        </nav>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <div class="main-visual"></div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
-        <main>
-            <section class="summary">
-                <h2 class="summary-heading">プロジェクト概要</h2>
-                <p>
-                    上松プロジェクトでは「いつでもそばにいる」をテーマに、孤独感の解消を目的とした対話型AIを用いた<br>
-                   プロダクトを実装することを目標に活動しています。
-                </p>
-                <p>
-                    My Voice Mateとは好きなものを気楽に共有できる存在が欲しい人や、夜寝る時に寂しさを感じる人の<br>
-                    話し相手になって寂しさを和らげることができるものです。成果物の方針としてぬいぐるみにディスプレイを<br>
-                    取り付けて表情を表現したり、合成音声による会話で温かみを感じられるようなプロダクトの完成を<br>
-                    目指しています。
-                </p>
-                <p>
-                    「Mate」とは友だちのような、話に対して共感してくれたり自分から話しかけてくれたりするものを<br>
-                    指していて、ただ便利なものではなく共に過ごしてくれる存在です。
-                </p>
-                <p>
-                    当初はLive2Dを用いたアプリを製作する予定でしたが、より温かみを感じられるように、<br>
-                    ぬいぐるみとLive2Dを掛け合わせて表情まで表現することができるプロダクトを製作する予定です。
-                </p>
-              <h2 class="summary-member">メンバー紹介</h2>
-            </section>
-            <section class="member">
-                <div class="box" id="makeImg">
-                    <div>
-                        名前:安達　悠太<br>
-                        プログラム:CD<br>
-                        役職:会計<br>
-                        グループ：中サイズグループ
-                    </div>
+  <title>UEMATSU PROJECTW2022</title>
+</head>
+<body>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-light ">
+    <div class="container-fluid,bg-blue.bg-gradient">
+      <a class="navbar-brand" href="#"><img src="./img/logo.JPG" style="width: 50px; height: 50px;" ></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+      data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+      aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+      <div class="navbar-nav">
+        <a href="#about"class="nav-link active" aria-current="page">About</a>
+        <a href="#making"class="nav-link">Making</a>
+        <a href="#members"class="nav-link">Members</a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-                    <div>
-                        名前:栗原　海人<br>
-                        プログラム:CD<br>
-                        役職:進捗管理<br>
-                        グループ：大サイズグループ
-                    </div>
 
-                    <div>
-                        名前:今村　眞夏美 <br>
-                        プログラム:MC<br>
-                        役職:代表<br>
-                        グループ：中サイズグループ
-                    </div>
-                    
-                    <div>
-                        名前:安部　典子 <br>
-                        プログラム:PC<br>
-                        役職:ＳＮＳ<br>
-                        グループ：小サイズグループ
-                    </div>
+<div class="container" style="background-color: #6380D6">
 
-                    <div>
-                        名前:左　辰<br>
-                        プログラム:PC<br>
-                        役職:会計<br>
-                        グループ：大サイズグループ
-                    </div>
+  <p><img src="./img/header1.png" class =" d-block w-100 img-fluid"></p>
+  <div class="About" id="about">
+    <h1 style="background-color: #D1E9FF" >MVMとは</h1>
+    <p class="p-3">上松プロジェクトでは「いつでもそばにいる」をテーマに、孤独感の解消を目的とした対話型AIを用いたプロダクトを実装することを目標に活動しています。
+      My Voice Mateとは好きなものを気楽に共有できる存在が欲しい人や、
+      夜寝る時に寂しさを感じる人の話し相手になって寂しさを和らげることができるものです。
+      成果物の方針としてぬいぐるみにディスプレイを取り付けて表情を表現したり、合成音声による会話で温かみを感じられるようなプロダクトの完成を目指しています。
+      「Mate」とは友だちのような、話に対して共感してくれたり自分から話しかけてくれたりするものを指しています。
+      ただ便利なものではなく共に過ごしてくれる存在です。
+      当初はLive2Dを用いたアプリを製作する予定でしたが、より温かみを感じられるように、
+      ぬいぐるみとLive2Dを掛け合わせて表情まで表現することができるプロダクトを製作する予定です。
+    </p>
+  </div>
+  <div class="Makting" id="making" style="background-color: #D1E9FF">
+    <h1>プロトタイプ制作</h1>
+    <div class="L">
 
-                    <div>
-                        名前:萩原　直樹<br>
-                        プログラム:NS<br>
-                        役職:連絡<br>
-                        グループ：中サイズグループ
-                    </div>
+      <h2>大グループ</h2>
+      <div class="col-md-7" >
+        <p><img src="./img/L01.PNG" class="rounded img-fluid"></p>
+      </div>
+    </div>
+    <div class="M">
 
-                    <div>
-                        名前:余　昊柯<br>
-                        プログラム:PC<br>
-                        役職:進捗管理<br>
-                        グループ：小サイズグループ
-                    </div>
+      <h2>中グループ</h2>
+      <div class="row">
+        <div class="col-md-6" >
+          <p><img src="./img/M01.PNG" class="rounded img-fluid"></p>
+        </div>
+        <div class="col-md-6" >
+        <p>大きさ：PCのディスプレイ程度を想定
+          <br>
 
-                    <div>
-                        名前:雒　瀚梁<br>
-                        プログラム:DS<br>
-                        役職:ＳＮＳ<br>
-                        グループ：中サイズグループ
-                    </div>
+          現在、ディスプレイ有り、無しの２パターンを製作中
+          <br>
+          ディスプレイ有り：
+          <br>
+          ・ぬいぐるみの顔の部分にディスプレイを搭載
+          <br>
+          ・表情をLive2Dで表現する。表情豊かな話し相手になってくれる。
+          <br>
+          ・主に家での使用を想定
+          <br>
+          ディスプレイ無し：
+          <br>
+          ・リュックの肩紐を付けて外に持ち運ぶことができる
+          <br>
+          ・様々なデバイスに繋いで中の人を写し、会話を楽しむことができる
+          <br>
+          ・着せ替えをすることができる
+        </p>
+        </div>
+      </div>
+      <div class="S">
+        <h2>小グループ</h2>
+        <div class="col-md-5" >
+          <p><img src="./img/S01.PNG" class="rounded img-fluid"></p>
+        </div>
 
-                    <div>
-                        名前:王　子涵<br>
-                        プログラム:MC<br>
-                        役職:資料管理<br>
-                        グループ：小サイズグループ
-                    </div>
-                    
-                </div>
-            </section>
-        </main>
-    </body>
+
+      </div>
+    </div>
+
+    <div class="Members" id="members" style="background-color: #D1E9FF">
+      <h1>メンバー</h1>
+      <table class="table table-borderless"　>
+
+        <thead>
+
+        </thead>
+        <tbody>
+          <tr>
+            <td style="background-color: #F9F9F9">安達　悠太
+              <br>
+              NE19-1045C
+              <br>
+              あらは
+
+            </td>
+            <td style="background-color: #F9F9F9">栗原　海人
+              <br>
+              NE20-1089J
+              <br>
+              うみんちゅ
+            </td>
+            <td style="background-color: #F9F9F9">今村　眞夏美
+              <br>
+              NE20-1033H
+              <br>
+              まなみ
+
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #F9F9F9">左　辰
+              <br>
+              NE20-1229K
+              <br>
+              JIN
+
+            </td>
+            <td style="background-color: #F9F9F9">安部　典子
+              <br>
+              安部典子
+              <br>
+              あべべ
+            </td>
+            <td style="background-color: #F9F9F9">萩原　直樹
+              <br>
+              NE20-1183D
+              <br>
+              NASKA(ナスカ）
+            </td>
+          </tr>
+          <tr>
+            <td style="background-color: #F9F9F9">余　昊柯
+              <br>
+              NE20-1221D
+              <br>
+              よ
+            </td>
+            <td style="background-color: #F9F9F9">雒　瀚梁
+              <br>
+              NE20-1224J
+              <br>
+              ラク
+            </td>
+            <td style="background-color: #F9F9F9">王　子涵
+              <br>
+              NE20-1120B
+              <br>
+              オウ
+            </td>
+          </tr>
+
+        </tbody>
+      </table>
+
+
+</div>
+
+
+</div>
+
+</div>
+
+<footer>
+  <p class="mx-auto" style="width:200px;">NE201221D Company, Inc.</p>
+</footer>
+<!-- Optional JavaScript; choose one of the two! -->
+
+<!-- Option 1: Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+<!-- Option 2: Separate Popper and Bootstrap JS -->
+<!--
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
+-->
+</body>
 </html>

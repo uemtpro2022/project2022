@@ -11,6 +11,15 @@ body{
 	background-size: cover;
 }
 
+a:hover{
+    text-decoration: underline;
+}
+
+a{
+    letter-spacing: 5px;
+    margin-left: 20px;
+}
+
 header {
     width: 90%; /* 横幅90% */
     padding: 0;
@@ -30,6 +39,8 @@ header .heading { /* headerタグ内のheadingクラスにのみ反映される 
 .navbar{
     border-color:#6380d6;
     background-color: #6380d6;
+    color:#ffffff;
+    font-size: large;
 }
 
 

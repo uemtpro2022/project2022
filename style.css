@@ -17,14 +17,22 @@ a:hover{
 
 a{
     letter-spacing: 5px;
-    margin-left: 40px;
-    margin-top:30px;
+    margin-left: 0px;
+    margin-top:5px;
     margin-bottom:0px;
 
 }
 
+h4{
+  font-family: 'HanziPen SC',sans-serif;
+  font-weight:bold;
+  font-size: auto;
+}
+
 .navbar-brand{ /*ロゴ*/
-    margin-bottom: 30px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
 }
 
 header {
@@ -32,10 +40,25 @@ header {
     padding: 0;
     margin: 0 ;
     text-align: center;
+    display:flex;
+    justify-content:space-between;
 }
 
 header .heading { /* headerタグ内のheadingクラスにのみ反映される */
     font-size: 32px;
+}
+
+.navbar-nav{
+  margin-left:auto;
+}
+
+ul{
+  display: flex;
+  list-style: none;
+}
+
+li{
+  margin-left:20px
 }
 
 
@@ -46,7 +69,7 @@ header .heading { /* headerタグ内のheadingクラスにのみ反映される 
 .gnavi{
     display: flex;
     flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-    margin:0 0 10 0;
+    margin:0 0 0 0;
     list-style: none;
 }
 
@@ -58,7 +81,7 @@ header .heading { /* headerタグ内のheadingクラスにのみ反映される 
 }
 
 .gnavi li{
-    margin-bottom:20px;
+    margin-bottom:10px;
 }
 
 /*==================================================

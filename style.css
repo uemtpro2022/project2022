@@ -14,7 +14,7 @@ body{
 header {
     width: 90%; /* 横幅90% */
     padding: 0;
-    margin: 0 auto;
+    margin: 0 ;
     text-align: center;
 }
 
@@ -27,6 +27,11 @@ header .heading { /* headerタグ内のheadingクラスにのみ反映される 
     padding: 10px 0;
     margin: 0 auto;
 }
+.navbar{
+    border-color:#6380d6;
+    background-color: #6380d6;
+}
+
 
 .nav-list-item {
     list-style: none;

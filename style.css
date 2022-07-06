@@ -17,7 +17,14 @@ a:hover{
 
 a{
     letter-spacing: 5px;
-    margin-left: 20px;
+    margin-left: 40px;
+    margin-top:30px;
+    margin-bottom:0px;
+
+}
+
+.navbar-brand{ /*ロゴ*/
+    margin-bottom: 30px;
 }
 
 header {
@@ -30,6 +37,100 @@ header {
 header .heading { /* headerタグ内のheadingクラスにのみ反映される */
     font-size: 32px;
 }
+
+
+/*==================================================
+共通　横並びのための設定　タブ
+===================================*/
+
+.gnavi{
+    display: flex;
+    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+    margin:0 0 10 0;
+    list-style: none;
+}
+
+.gnavi li a{
+    display: block;
+    padding:10px 30px;
+    text-decoration: none;
+    color: #333;
+}
+
+.gnavi li{
+    margin-bottom:20px;
+}
+
+/*==================================================
+　5-3-6 タブのCSS
+===================================*/
+
+/*背景の設定*/
+
+.gnavi li a{
+    /*背景色の基点とするためrelativeを指定*/
+  position: relative;
+    /*アニメーションの指定*/
+  transition: all .7s;
+}
+
+.gnavi li a::after {
+  content: '';
+    /*絶対配置で線の位置を決める*/
+  position: absolute;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+    /*背景の形状*/
+  width: 0;
+  height: 1px;
+  background:#14429e;
+  opacity: 0;/*はじめは透過を0に*/
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a::after,
+.gnavi li a:hover::after {
+    /*背景の形状*/
+  width: 100%;
+  opacity: 1;
+    /*アニメーションの指定*/
+  animation:bgappear 0.5s forwards;
+}
+
+/*アニメーションで線を伸ばして背景をつける*/
+@keyframes bgappear{
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+    background: #14429e;
+  }
+}
+
+/*現在地とhoverの設定*/
+.gnavi li.current a,
+.gnavi li a:hover{
+    color: #fff;
+    /*テキストを最前面へ*/
+  z-index: 1;
+}
+/*========= レイアウトのためのCSS ===============*/
+
+.lead{
+  padding: 50px 10px;
+}
+/*==================================================
+　5-3-6 タブのCSS終わり
+===================================*/
+
 
 .nav-list {
     text-align: center;

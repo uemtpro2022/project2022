@@ -72,7 +72,7 @@ a{
 
 }
 
-h4{
+h4.title{
   font-family: 'HanziPen SC',sans-serif;
   font-weight:bold;
   font-size: auto;
@@ -289,3 +289,27 @@ main {
     margin-left: 10px;
     margin-bottom: 50px;
 }
+/*==================================================
+　about css
+===================================*/
+div.About{
+  margin-top: 3em;
+  margin-bottom: 3em;
+  line-height:200%;
+
+}
+h4{
+  line-height:200%; 
+  font-family: 'HanziPen SC',sans-serif;
+}
+#initial span{
+  font-size:200%;
+  font-weight:bold
+}
+
+#about-1{
+  margin-top: 3em;
+}
+/*==================================================
+　about css終わり
+===================================*/

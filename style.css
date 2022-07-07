@@ -36,8 +36,28 @@ body{
 }/*星のやつ*/
 
 h3{
-  padding:60px 40px;
-  margin:auto;
+  margin-top: 0px;
+  line-height: 200%;
+}
+
+h3.left{
+  padding-top:60px;
+  padding-left:40px;
+  padding-right:40px;
+  text-align: left;
+}
+
+h3.middle{
+  padding:10px 40px;
+  text-align: center;
+  font-size: 180%;
+}
+
+h3.right{
+  padding:30px 40px;
+  text-align: right;
+  font-size: 150%;
+  padding-bottom: 50px;
 }
 
 a:hover{
@@ -183,6 +203,9 @@ li{
 　5-3-6 タブのCSS終わり
 ===================================*/
 
+p.p-3{
+  color:#fff;
+}
 
 .nav-list {
     text-align: center;

@@ -5,11 +5,13 @@
 }
 
 body{
-    background:linear-gradient(#0d0080, #ffffff);
+  background:linear-gradient(#0d0080,#262b9a,#353ea5, #ffffff);
 	background-repeat: no-repeat;
-    background-position:50% 50%;
+  background-size: 200% 200%;
+  background-position:50% 50%;
 	background-size: cover;
 }
+
 
 h3{
   padding:60px 40px;

@@ -12,6 +12,26 @@ body{
 	background-size: cover;
 }
 
+.star {
+  animation: kirakira 12s linear;
+  color: rgb(239, 239, 138);
+  opacity: 0.5;
+  display: inline-block;
+  height: 1em;
+  line-height: 1em;
+  position: fixed;
+  top: -1em;
+  z-index: 1000;
+}
+
+@keyframes kirakira {
+  0% {
+      transform:translateY(0) rotateY(0);
+  }
+  100% {
+      transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
+  }
+}/*星のやつ*/
 
 h3{
   padding:60px 40px;

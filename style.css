@@ -14,6 +14,11 @@ background-position:50% 50%;
 background-size: cover;
 }
 
+.about-header{
+  padding-top: 0%;
+  margin-top: 0%;
+}
+
 .star {
 animation: kirakira 12s linear;
 color: rgb(242, 242, 187);
@@ -120,7 +125,8 @@ text-align: left;
 }
 
 h3.middle{
-padding:10px 40px;
+padding:30px 40px;
+padding-top:50px;
 text-align: center;
 font-size: 180%;
 }
@@ -131,8 +137,8 @@ span{
 
 h3.right{
 padding:30px 40px;
-text-align: right;
-font-size: 150%;
+text-align: center;
+font-size: 130%;
 padding-bottom: 50px;
 }
 
@@ -369,7 +375,7 @@ main {
 　about css
 ===================================*/
 div.About{
-margin-top: 3em;
+margin-top: 0em;
 margin-bottom: 3em;
 line-height:200%;
 

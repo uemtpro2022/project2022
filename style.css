@@ -111,6 +111,12 @@ h2:before {
 /*見出し終わり*/
 div.Making{
 	border-radius: 30px;
+	background-color:rgb(209,233,255);
+	box-shadow: 10px 10px 0 rgba(255,255,255,0.5);
+}
+div.Members{
+	margin-top: 50px;
+	border-radius: 30px;
 }
 h3{
 margin-top: 0px;

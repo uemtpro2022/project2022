@@ -117,6 +117,7 @@ div.Making{
 div.Members{
 	margin-top: 50px;
 	border-radius: 30px;
+	box-shadow: 10px 10px 0 rgba(255,255,255,0.5);
 }
 h3{
 margin-top: 0px;

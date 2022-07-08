@@ -9,11 +9,17 @@
 
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="style.css"><!--css-->
+  <link rel="stylesheet" type="text/css" href="style2.css"><!--css-->
 
   <title>UEMATSU PROJECTW2022</title>
 </head>
 <body>
+	<!-- ローディング画面 -->
+	<div id="loading">
+		<div class="spinner"></div>
+	</div>
+ 
+</div>
   <nav class="navbar sticky-top navbar-expand-lg navbar-light borderless">
     <div class="container-fluid" style="background-color:#6380d6" >
         <a class="navbar-brand" href="#"><img src="./img/logo.jpg" class="rounded shadow-sm" style="width: 50px; height: 50px;"></a>
@@ -37,9 +43,9 @@
 
   <div class="About" id="about">
     <h3 class="left" style="color: #D1E9FF" >
-      上松プロジェクトでは</h3>>
+      上松プロジェクトでは</h3>
     <h3 class="middle" style="color: #D1E9FF" >
-      「いつでもそばにいる」をテーマに、
+      <span style="color: #FFFF00">「いつでもそばにいる」</span>をテーマに、</h3>
     <h3 class="right" style="color: #D1E9FF" >
       孤独感の解消を目的とした"Mate"の実装に励んでいます
     </h3>
@@ -109,7 +115,7 @@
         <h4 id="initial" style="text-align: right"><span>「Mate」</span>とは</h4>
         <h4 style="text-align: right">話に対して共感してくれたり</h4>
         <h4 style="text-align: right">自分から話しかけてくれたりするものを指しています。</h4>
-        <h4 style="text-align: right">ただ便利なものではなく共に過ごしてくれる存在です。</h4>
+        <h4 style="text-align: right">ただ便利なものではなく、共に過ごしてくれる存在です。</h4>
     
     </div>
     </div>
@@ -136,10 +142,29 @@
     <div class="L">
 
       <h2>大グループ</h2>
-      <div class="col-md-7" >
-        <p><img src="./img/L01.PNG" class="rounded img-fluid"></p>
-      </div>
-    </div>
+			<div class="row">
+				<div class="col-md-6" >
+					<p style="margin: 100px;">
+						大きさ：120cm程度
+						<br>
+						目元の表情をディスプレイで再現
+						<br>
+						・抱きしめるとセンサで感知して表情が変わる
+						<br>
+						・サングラス型ディスプレイを使って目の動きや形を変える
+						<br>
+						・サングラスを外すとお休みモードに
+						<br>
+						・口元を動かして喋っているような動作（未実装）
+						<br>
+						・抱きしめながら話すことで寝落ちすることを想定。
+					</p>
+				</div>
+				<div class="col-md-6" >
+					<p><img src="./img/L01.PNG" class="rounded img-fluid"></p>
+				</div>
+			</div>
+		</div>
     <div class="M">
 
       <h2>中グループ</h2>
@@ -148,7 +173,8 @@
           <p><img src="./img/M01.PNG" class="rounded img-fluid"></p>
         </div>
         <div class="col-md-6" >
-        <p>大きさ：PCのディスプレイ程度を想定
+        <p>
+					<br><br>大きさ：PCのディスプレイ程度を想定
           <br>
 
           現在、ディスプレイ有り、無しの２パターンを製作中
@@ -174,11 +200,10 @@
       <div class="S">
         <h2>小グループ</h2>
         <div class="row">
+        
         <div class="col-md-6" >
-          <p><img src="./img/S01.PNG" class="rounded img-fluid"></p>
-        </div>
-        <div class="col-md-6" >
-          <p>大きさ：ペットボトル（約20cm）
+          <p style="margin: 100px;">
+						大きさ：ペットボトル（約20cm）
             <br>
             現在、ディスプレイ有りを制作中
             <br>
@@ -194,6 +219,9 @@
             <br>
             ・ベッド型充電器で一緒に寝ている体験を。
           </p>
+        </div>
+				<div class="col-md-6" >
+          <p><img src="./img/S01.PNG" class="rounded img-fluid"></p>
         </div>
       </div>
 

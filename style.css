@@ -321,6 +321,76 @@ body{
   }
 }/*星のやつ*/
 
+/*ローディング*/
+#loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #0d0080;
+	position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+}
+
+.spinner {
+  width: 100px;
+  height: 100px;
+  margin: 200px auto;
+  background-color: #fff;
+  border-radius: 100%;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+/* ローディングアニメーション */
+@keyframes sk-scaleout {
+  0% {
+    transform: scale(0);
+  } 100% {
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+ 
+/* コンテンツ部分の装飾 */
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*ローディング終わり*/
+
+/*大見出し*/
+h1 {
+  padding: 1rem 2rem;
+  color: #fff;
+  background: #015dac;
+  background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%);
+  background-size: 50px 50px;
+  background-position: 0 0, 25px 25px;
+
+}
+/*小見出し*/
+h2 {
+  position: relative;
+  display: inline-block;
+  padding: 1rem 2rem 1rem 4rem;
+  color: #fff;
+  border-radius: 100vh 0 0 100vh;
+  background: #015dac;
+}
+
+h2:before {
+  position: absolute;
+  top: calc(50% - 7px);
+  left: 10px;
+  width: 14px;
+  height: 14px;
+  content: '';
+  border-radius: 50%;
+  background: #fff;
+}
+/*見出し終わり*/
+
 h3{
   margin-top: 0px;
   line-height: 200%;

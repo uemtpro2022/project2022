@@ -1,324 +1,38 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'HanziPen SC',sans-serif;;
-    /*'TsukuBRdGothic-Regular',sans-serif;;*/
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'HanziPen SC',sans-serif;;
+	/*'TsukuBRdGothic-Regular',sans-serif;;*/
 }
 
 body{
-  background:linear-gradient(#0d0080,#262b9a,#353ea5, #ffffff);
-	background-repeat: no-repeat;
-  background-size: 200% 200%;
-  background-position:50% 50%;
-	background-size: cover;
+background:linear-gradient(#0d0080,#262b9a,#353ea5, #ffffff);
+background-repeat: no-repeat;
+background-size: 200% 200%;
+background-position:50% 50%;
+background-size: cover;
 }
 
 .star {
-  animation: kirakira 12s linear;
-  color: rgb(242, 242, 187);
-  opacity: 0.5;
-  display: inline-block;
-  height: 1em;
-  line-height: 1em;
-  position: fixed;
-  top: -1em;
-  z-index: 1000;
+animation: kirakira 12s linear;
+color: rgb(242, 242, 187);
+opacity: 0.5;
+display: inline-block;
+height: 1em;
+line-height: 1em;
+position: fixed;
+top: -1em;
+z-index: 1000;
 }
 
 @keyframes kirakira {
-  0% {
-      transform:translateY(0) rotateY(0);
-  }
-  100% {
-      transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
-  }
-}/*星のやつ*/
-
-h3{
-  margin-top: 0px;
-  line-height: 200%;
+0% {
+		transform:translateY(0) rotateY(0);
 }
-
-h3.left{
-  padding-top:60px;
-  padding-left:40px;
-  padding-right:40px;
-  text-align: left;
+100% {
+		transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
 }
-
-h3.middle{
-  padding:10px 40px;
-  text-align: center;
-  font-size: 180%;
-}
-
-h3.right{
-  padding:30px 40px;
-  text-align: right;
-  font-size: 150%;
-  padding-bottom: 50px;
-}
-
-a:hover{
-    text-decoration: underline;
-}
-
-a{
-    letter-spacing: 5px;
-    margin-left: 0px;
-    margin-top:5px;
-    margin-bottom:0px;
-
-}
-
-h4{
-  font-family: 'HanziPen SC',sans-serif;
-  font-weight:bold;
-  font-size: auto;
-}
-
-.navbar-brand{ /*ロゴ*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
-}
-
-header {
-    width: 90%; /* 横幅90% */
-    padding: 0;
-    margin: 0 ;
-    text-align: center;
-    display:flex;
-    justify-content:space-between;
-}
-
-header .heading { /* headerタグ内のheadingクラスにのみ反映される */
-    font-size: 32px;
-}
-
-.navbar-nav{
-  margin-left:auto;
-}
-
-ul{
-  display: flex;
-  list-style: none;
-}
-
-li{
-  margin-left:20px
-}
-
-
-/*==================================================
-共通　横並びのための設定　タブ
-===================================*/
-
-.gnavi{
-    display: flex;
-    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-    margin:0 0 0 0;
-    list-style: none;
-}
-
-.gnavi li a{
-    display: block;
-    padding:10px 30px;
-    text-decoration: none;
-    color: #333;
-}
-
-.gnavi li{
-    margin-bottom:10px;
-}
-
-/*==================================================
-　5-3-6 タブのCSS
-===================================*/
-
-/*背景の設定*/
-
-.gnavi li a{
-    /*背景色の基点とするためrelativeを指定*/
-  position: relative;
-    /*アニメーションの指定*/
-  transition: all .7s;
-}
-
-.gnavi li a::after {
-  content: '';
-    /*絶対配置で線の位置を決める*/
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-    /*背景の形状*/
-  width: 0;
-  height: 1px;
-  background:#14429e;
-  opacity: 0;/*はじめは透過を0に*/
-}
-
-/*現在地とhoverの設定*/
-.gnavi li.current a::after,
-.gnavi li a:hover::after {
-    /*背景の形状*/
-  width: 100%;
-  opacity: 1;
-    /*アニメーションの指定*/
-  animation:bgappear 0.5s forwards;
-}
-#Makting rounded{
-  opacity: 0.3;
-}
-
-/*アニメーションで線を伸ばして背景をつける*/
-@keyframes bgappear{
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #14429e;
-  }
-}
-
-/*現在地とhoverの設定*/
-.gnavi li.current a,
-.gnavi li a:hover{
-    color: #fff;
-    /*テキストを最前面へ*/
-  z-index: 1;
-}
-/*========= レイアウトのためのCSS ===============*/
-
-.lead{
-  padding: 50px 10px;
-}
-/*==================================================
-　5-3-6 タブのCSS終わり
-===================================*/
-
-p.p-3{
-  color:#fff;
-}
-
-.nav-list {
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
-}
-.navbar{
-    border-color:#6380d6;
-    background-color: #6380d6;
-    color:#ffffff;
-    font-size: large;
-}
-
-
-.nav-list-item {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
-}
-
-.main-visual {
-    width: 100%; /* 横幅いっぱい */
-    height: 300px; /* 高さ300px */
-    background-image: url(img/header.jpeg);
-    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center; /* 背景画像を中央に配置 */
-}
-
-.main-visual-content {
-    width: 40%; /* 横幅40% */
-    height: 300px; /* 親の高さに揃える */
-}
-
-main {
-    width: 800px; /* 横幅800px */
-    margin: 0 auto; /* 要素の中央揃え */
-    padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
-}
-  
-.summary {
-    width: 100%;
-    margin-right: 30px; /* 領域の右側余白 */
-    text-align: center;
-    margin-bottom: 20px;
-}
-  
-.summary-heading {
-    border-bottom: 8px solid #f7f7f7;
-    text-align: center;
-    line-height: 0.6;
-    margin: 10px;
-    padding: 10px;
-}
-
-.summary-member{
-    border-bottom: 8px solid #f7f7f7;
-    line-height: 0.6;
-    margin: 10px;
-}
-
-.member{
-    width:100%;
-    margin: 20px 20px;
-    padding:20px auto;
-}
-
-.box {
-    margin-bottom: 50px;
-    width: 100%;
-    max-height: 210px;                /* BOXの高さ           */
-    /* ▼ FlexBoxの定義 */
-    display: flex;                 /* FlexBox定義         */
-    justify-content: space-between;               /* 揃えの定義          */
-    flex-wrap: wrap;                 /* 折り返し定義        */
-}
-
-.box div {
-    box-sizing: border-box;           /* 罫線も含む長さ      */
-    background: #B0C4DE;              /* BOXの背景色         */
-    border: 2px solid #35557f;    /* 枠線の指定          */
-    margin-left: 10px;
-    margin-bottom: 50px;
-}
-body{
-  background:linear-gradient(#0d0080,#262b9a,#353ea5, #ffffff);
-	background-repeat: no-repeat;
-  background-size: 200% 200%;
-  background-position:50% 50%;
-	background-size: cover;
-}
-
-.star {
-  animation: kirakira 12s linear;
-  color: rgb(242, 242, 187);
-  opacity: 0.5;
-  display: inline-block;
-  height: 1em;
-  line-height: 1em;
-  position: fixed;
-  top: -1em;
-  z-index: 1000;
-}
-
-@keyframes kirakira {
-  0% {
-      transform:translateY(0) rotateY(0);
-  }
-  100% {
-      transform:translateY(calc(100vh + 1em)) rotateY(3600deg);
-  }
 }/*星のやつ*/
 
 /*ローディング*/
@@ -367,7 +81,7 @@ h1 {
   background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%);
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
-
+	border-radius: 30px;
 }
 /*小見出し*/
 h2 {
@@ -390,80 +104,86 @@ h2:before {
   background: #fff;
 }
 /*見出し終わり*/
-
+div.Making{
+	border-radius: 30px;
+}
 h3{
-  margin-top: 0px;
-  line-height: 200%;
+margin-top: 0px;
+line-height: 200%;
 }
 
 h3.left{
-  padding-top:60px;
-  padding-left:40px;
-  padding-right:40px;
-  text-align: left;
+padding-top:60px;
+padding-left:40px;
+padding-right:40px;
+text-align: left;
 }
 
 h3.middle{
-  padding:10px 40px;
-  text-align: center;
-  font-size: 180%;
+padding:10px 40px;
+text-align: center;
+font-size: 180%;
+}
+span{
+	font-size: 190%;
+	font-weight: 700;
 }
 
 h3.right{
-  padding:30px 40px;
-  text-align: right;
-  font-size: 150%;
-  padding-bottom: 50px;
+padding:30px 40px;
+text-align: right;
+font-size: 150%;
+padding-bottom: 50px;
 }
 
 a:hover{
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 a{
-    letter-spacing: 5px;
-    margin-left: 0px;
-    margin-top:5px;
-    margin-bottom:0px;
+	letter-spacing: 5px;
+	margin-left: 0px;
+	margin-top:5px;
+	margin-bottom:0px;
 
 }
 
 h4.title{
-  font-family: 'HanziPen SC',sans-serif;
-  font-weight:bold;
-  font-size: auto;
+font-family: 'HanziPen SC',sans-serif;
+font-weight:bold;
+font-size: auto;
 }
 
 .navbar-brand{ /*ロゴ*/
-    margin-top: 5px;
-    margin-bottom: 5px;
-    text-align: center;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	text-align: center;
 }
 
 header {
-    width: 90%; /* 横幅90% */
-    padding: 0;
-    margin: 0 ;
-    text-align: center;
-    display:flex;
-    justify-content:space-between;
+	width: 90%; /* 横幅90% */
+	padding: 0;
+	margin: 0 ;
+	text-align: center;
+	display:flex;
+	justify-content:space-between;
 }
 
 header .heading { /* headerタグ内のheadingクラスにのみ反映される */
-    font-size: 32px;
+	font-size: 32px;
 }
 
 .navbar-nav{
-  margin-left:auto;
+margin-left:auto;
 }
 
 ul{
-  display: flex;
-  list-style: none;
+display: flex;
+list-style: none;
 }
 
 li{
-  margin-left:20px
+margin-left:20px
 }
 
 
@@ -472,21 +192,21 @@ li{
 ===================================*/
 
 .gnavi{
-    display: flex;
-    flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
-    margin:0 0 0 0;
-    list-style: none;
+	display: flex;
+	flex-wrap: wrap;/*スマホ表示折り返し用なのでPCのみなら不要*/
+	margin:0 0 0 0;
+	list-style: none;
 }
 
 .gnavi li a{
-    display: block;
-    padding:10px 30px;
-    text-decoration: none;
-    color: #333;
+	display: block;
+	padding:10px 30px;
+	text-decoration: none;
+	color: #333;
 }
 
 .gnavi li{
-    margin-bottom:10px;
+	margin-bottom:10px;
 }
 
 /*==================================================
@@ -496,175 +216,175 @@ li{
 /*背景の設定*/
 
 .gnavi li a{
-    /*背景色の基点とするためrelativeを指定*/
-  position: relative;
-    /*アニメーションの指定*/
-  transition: all .7s;
+	/*背景色の基点とするためrelativeを指定*/
+position: relative;
+	/*アニメーションの指定*/
+transition: all .7s;
 }
 
 .gnavi li a::after {
-  content: '';
-    /*絶対配置で線の位置を決める*/
-  position: absolute;
-  z-index: -1;
-  bottom: 0;
-  left: 0;
-    /*背景の形状*/
-  width: 0;
-  height: 1px;
-  background:#14429e;
-  opacity: 0;/*はじめは透過を0に*/
+content: '';
+	/*絶対配置で線の位置を決める*/
+position: absolute;
+z-index: -1;
+bottom: 0;
+left: 0;
+	/*背景の形状*/
+width: 0;
+height: 1px;
+background:#14429e;
+opacity: 0;/*はじめは透過を0に*/
 }
 
 /*現在地とhoverの設定*/
 .gnavi li.current a::after,
 .gnavi li a:hover::after {
-    /*背景の形状*/
-  width: 100%;
-  opacity: 1;
-    /*アニメーションの指定*/
-  animation:bgappear 0.5s forwards;
+	/*背景の形状*/
+width: 100%;
+opacity: 1;
+	/*アニメーションの指定*/
+animation:bgappear 0.5s forwards;
 }
 
 /*アニメーションで線を伸ばして背景をつける*/
 @keyframes bgappear{
-  0% {
-    width: 0%;
-    height: 1px;
-  }
-  50% {
-    width: 100%;
-    height: 1px;
-  }
-  100% {
-    width: 100%;
-    height: 100%;
-    background: #14429e;
-  }
+0% {
+	width: 0%;
+	height: 1px;
+}
+50% {
+	width: 100%;
+	height: 1px;
+}
+100% {
+	width: 100%;
+	height: 100%;
+	background: #14429e;
+}
 }
 
 /*現在地とhoverの設定*/
 .gnavi li.current a,
 .gnavi li a:hover{
-    color: #fff;
-    /*テキストを最前面へ*/
-  z-index: 1;
+	color: #fff;
+	/*テキストを最前面へ*/
+z-index: 1;
 }
 /*========= レイアウトのためのCSS ===============*/
 
 .lead{
-  padding: 50px 10px;
+padding: 50px 10px;
 }
 /*==================================================
 　5-3-6 タブのCSS終わり
 ===================================*/
 
 p.p-3{
-  color:#fff;
+color:#fff;
 }
 
 .nav-list {
-    text-align: center;
-    padding: 10px 0;
-    margin: 0 auto;
+	text-align: center;
+	padding: 10px 0;
+	margin: 0 auto;
 }
 .navbar{
-    border-color:#6380d6;
-    background-color: #6380d6;
-    color:#ffffff;
-    font-size: large;
+	border-color:#6380d6;
+	background-color: #6380d6;
+	color:#ffffff;
+	font-size: large;
 }
 
 
 .nav-list-item {
-    list-style: none;
-    display: inline-block;
-    margin: 0 20px;
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
 }
 
 .main-visual {
-    width: 100%; /* 横幅いっぱい */
-    height: 300px; /* 高さ300px */
-    background-image: url(img/header.jpeg);
-    background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
-    background-position: center; /* 背景画像を中央に配置 */
+	width: 100%; /* 横幅いっぱい */
+	height: 300px; /* 高さ300px */
+	background-image: url(img/header.jpeg);
+	background-size: cover; /* 縦横比を維持したまま背景領域を埋め尽くす */
+	background-position: center; /* 背景画像を中央に配置 */
 }
 
 .main-visual-content {
-    width: 40%; /* 横幅40% */
-    height: 300px; /* 親の高さに揃える */
+	width: 40%; /* 横幅40% */
+	height: 300px; /* 親の高さに揃える */
 }
 
 main {
-    width: 800px; /* 横幅800px */
-    margin: 0 auto; /* 要素の中央揃え */
-    padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
+	width: 800px; /* 横幅800px */
+	margin: 0 auto; /* 要素の中央揃え */
+	padding: 70px 0; /* 上下に70px、左右に0pxの内側余白 */
 }
-  
+
 .summary {
-    width: 100%;
-    margin-right: 30px; /* 領域の右側余白 */
-    text-align: center;
-    margin-bottom: 20px;
+	width: 100%;
+	margin-right: 30px; /* 領域の右側余白 */
+	text-align: center;
+	margin-bottom: 20px;
 }
-  
+
 .summary-heading {
-    border-bottom: 8px solid #f7f7f7;
-    text-align: center;
-    line-height: 0.6;
-    margin: 10px;
-    padding: 10px;
+	border-bottom: 8px solid #f7f7f7;
+	text-align: center;
+	line-height: 0.6;
+	margin: 10px;
+	padding: 10px;
 }
 
 .summary-member{
-    border-bottom: 8px solid #f7f7f7;
-    line-height: 0.6;
-    margin: 10px;
+	border-bottom: 8px solid #f7f7f7;
+	line-height: 0.6;
+	margin: 10px;
 }
 
 .member{
-    width:100%;
-    margin: 20px 20px;
-    padding:20px auto;
+	width:100%;
+	margin: 20px 20px;
+	padding:20px auto;
 }
 
 .box {
-    margin-bottom: 50px;
-    width: 100%;
-    max-height: 210px;                /* BOXの高さ           */
-    /* ▼ FlexBoxの定義 */
-    display: flex;                 /* FlexBox定義         */
-    justify-content: space-between;               /* 揃えの定義          */
-    flex-wrap: wrap;                 /* 折り返し定義        */
+	margin-bottom: 50px;
+	width: 100%;
+	max-height: 210px;                /* BOXの高さ           */
+	/* ▼ FlexBoxの定義 */
+	display: flex;                 /* FlexBox定義         */
+	justify-content: space-between;               /* 揃えの定義          */
+	flex-wrap: wrap;                 /* 折り返し定義        */
 }
 
 .box div {
-    box-sizing: border-box;           /* 罫線も含む長さ      */
-    background: #B0C4DE;              /* BOXの背景色         */
-    border: 2px solid #35557f;    /* 枠線の指定          */
-    margin-left: 10px;
-    margin-bottom: 50px;
+	box-sizing: border-box;           /* 罫線も含む長さ      */
+	background: #B0C4DE;              /* BOXの背景色         */
+	border: 2px solid #35557f;    /* 枠線の指定          */
+	margin-left: 10px;
+	margin-bottom: 50px;
 }
 /*==================================================
 　about css
 ===================================*/
 div.About{
-  margin-top: 3em;
-  margin-bottom: 3em;
-  line-height:200%;
+margin-top: 3em;
+margin-bottom: 3em;
+line-height:200%;
 
 }
 h4{
-  line-height:200%; 
-  font-family: 'HanziPen SC',sans-serif;
+line-height:200%; 
+font-family: 'HanziPen SC',sans-serif;
 }
 #initial span{
-  font-size:200%;
-  font-weight:bold
+font-size:200%;
+font-weight:bold
 }
 
 #about-1{
-  margin-top: 3em;
+margin-top: 3em;
 }
 /*==================================================
 　about css終わり

@@ -32,5 +32,8 @@ function starSet(clone) {
 //使用例。星を50個ふらせます。
 starMaker(30)
 
-
-
+/*ローディング終わりの拾得*/
+window.onload = function() {
+    const spinner = document.getElementById('loading');
+    spinner.classList.add('loaded');
+ }

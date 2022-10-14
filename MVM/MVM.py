@@ -18,9 +18,9 @@ print(line)
 ser.close()
 exit()
 """
-Nomal = cv2.imread("picNom.png")
-Rough  = cv2.imread("picOhayo.png")
-
+Nomal = cv2.imread("tanuki.png")
+Rough  = cv2.imread("tanuki_smile.png")
+Sleep = cv2.imread("tanuki_sleep.png")
 while True:
     #count_arduino = ser.readline()
     # val_decoded = float(repr(val_arduino.decode())[1:-5])
@@ -30,9 +30,11 @@ while True:
     #print(count_decoded)
     print(line)
     if int(line) > 520:
-        cv2.imshow("picture", Rough)
+        cv2.imshow("picture", Sleep)
         cv2.waitKey(10)
     else:
+        cv2.imshow("picture", Nomal)
+        cv2.waitKey(10)
         r = sr.Recognizer()
         with sr.Microphone() as source:
             from playsound import playsound
@@ -45,7 +47,7 @@ while True:
             text2 = r.recognize_google(text,language="ja-JP")
             print("You said : " + text2)
         if text2 == "おはよう":
-            cv2.imshow("picture", Nomal)
+            cv2.imshow("picture", Rough)
             cv2.waitKey(10)
             from playsound import playsound
             playsound("voiceOha.wav")
@@ -57,16 +59,16 @@ while True:
                 print(rand)
                 if rand < 5:
                     from playsound import playsound
-                    playsound("voicesample9.wav")
+                    playsound("voiceRand.wav")
                 else:
                     from playsound import playsound
                     playsound("voiceRand2.wav")
         elif text2 == "おやすみ":
             from playsound import playsound
-            playsound("voicesample9.wav")
+            playsound("voiceOya.wav")
+            cv2.destroyAllWindows()
+            break
         else:
             cv2.imshow("picture", Rough)
-
         cv2.waitKey(10)
-
 #ser.close()

@@ -7,7 +7,7 @@
 }
 
 body{
-background:linear-gradient(#0d0080,#262b9a,#353ea5, #ffffff);
+background:linear-gradient(#7094de,#839ed5,#b7c2d7, #ffffff);
 background-repeat: no-repeat;
 background-size: 200% 200%;
 background-position:50% 50%;
@@ -307,8 +307,8 @@ color:#fff;
 	margin: 0 auto;
 }
 .navbar{
-	border-color:#6380d6;
-	background-color: #6380d6;
+	background-color: transparent;
+	background-color: transparent;
 	color:#ffffff;
 	font-size: large;
 }

@@ -429,8 +429,13 @@ margin-top: 3em;
 	font-style: normal;
 	font-size: 100px;
 	-webkit-text-stroke: 1px #000;
-<<<<<<< HEAD
-} */
+}
+
+.about > p{
+	left: 514px;
+	color: #fff;
+	padding: auto;
+}
 
 /*=======================================
 　スケジュール
@@ -602,13 +607,3 @@ margin-top: 3em;
   .timeline-body > p + p {
 	margin-top: 5px;
   }
-  
-=======
-}
-
-.about > p{
-	left: 514px;
-	color: #fff;
-	padding: auto;
-}
->>>>>>> 7c2613b (about背景)

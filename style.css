@@ -383,7 +383,7 @@ line-height:200%;
 
 }
 h4{
-line-height:200%; 
+line-height:200%;
 font-family: 'HanziPen SC',sans-serif;
 }
 #initial span{
@@ -402,24 +402,34 @@ margin-top: 3em;
 	margin: auto;
 	width: 640px;
 	height: 360px;
- }
-
-/* .about-us{
-	position: relative;
-	font-family: 'Inter';
-	width: 100%;
-	height: 40px;
 }
 
+.about{
+	text-align: center;
+}
+
+.subtitle-parent {
+	position: relative;;
+	text-align: center;
+	width: 100%;
+}
+.about-us{
+	margin: 0 auto;
+	font-family: 'Inter';
+}
 .subtitle-bg{
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: -1;
+	color: transparent;
 	font-family: 'Inter';
 	position: absolute;
 	font-style: normal;
-	left: 514px;
-	font-weight: 900;
 	font-size: 100px;
-	line-height: 40px;
 	-webkit-text-stroke: 1px #000;
+<<<<<<< HEAD
 } */
 
 /*=======================================
@@ -593,3 +603,12 @@ margin-top: 3em;
 	margin-top: 5px;
   }
   
+=======
+}
+
+.about > p{
+	left: 514px;
+	color: #fff;
+	padding: auto;
+}
+>>>>>>> 7c2613b (about背景)

@@ -1,0 +1,35 @@
+.about-c{
+	text-align: center;
+  padding: 0 0 50px 0;
+}
+
+.subtitle-parent {
+	position: relative;;
+	width: 100%;
+	padding: 50px;
+}
+
+.about-us{
+	margin: 0 auto;
+	font-family: 'Inter';
+	color: #fff;
+	font-size: 75px;
+}
+
+.subtitle-bg{
+	display: block;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -60%);
+	z-index: -1;
+	color: transparent;
+	font-family: 'Inter';
+	position: absolute;
+	font-style: normal;
+	font-size: 150px;
+	-webkit-text-stroke: 1px #000;
+}
+
+.about-p{
+	color: #fff;
+}

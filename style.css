@@ -410,60 +410,6 @@ margin-top: 3em;
 　カルーセル css終わり
 ===================================*/
 
-
-/*==================================================
-　about-us css
-===================================*/
-.about-c{
-	text-align: center;
-	margin: auto;
-}
-
-.subtitle-parent {
-	position: relative;;
-	text-align: center;
-	width: 100%;
-	padding: 50px;
-}
-
-.about-us{
-	margin: 0 auto;
-	font-family: 'Inter';
-	color: #fff;
-	font-size: 75px;
-}
-
-.about-us:before,
-.about-us:after{
-	content: '';
-  flex-grow: 1;/* 余白を分け与える */
-  height: 3px;
-  background: red;
-}
-
-.subtitle-bg{
-	display: block;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -60%);
-	z-index: -1;
-	color: transparent;
-	font-family: 'Inter';
-	position: absolute;
-	font-style: normal;
-	font-size: 150px;
-	-webkit-text-stroke: 1px #000;
-}
-
-.about-p{
-	color: #fff;
-}
-
-/*==================================================
-　about-us css終わり
-===================================*/
-
-
 /*=======================================
 　スケジュール
 ========================================*/
@@ -479,8 +425,7 @@ margin-top: 3em;
 	text-align: center;
   }
   
-  .okurigana {
-	opacity: 0.4;
+  .tl_komidashi {
 	text-align: center;
   }
   
@@ -634,3 +579,19 @@ margin-top: 3em;
   .timeline-body > p + p {
 	margin-top: 5px;
   }
+/*=======================================
+　スケジュール　終わり
+========================================*/
+
+/*=======================================
+　SNSBOX
+========================================*/
+
+.sns-box {
+	width: 50%;
+	margin: 0 auto;
+}
+
+/*=======================================
+　SNSBOX　終わり
+========================================*/

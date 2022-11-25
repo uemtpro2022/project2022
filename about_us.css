@@ -16,14 +16,6 @@
 	font-size: 75px;
 }
 
-.about-us:before,
-.about-us:after{
-	content: '';
-  flex-grow: 1;/* 余白を分け与える */
-  height: 3px;
-  background: red;
-}
-
 .subtitle-bg{
 	display: block;
 	top: 50%;

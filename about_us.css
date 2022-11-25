@@ -1,11 +1,10 @@
 .about-c{
 	text-align: center;
-	margin: auto;
+  padding: 20px;
 }
 
 .subtitle-parent {
 	position: relative;;
-	text-align: center;
 	width: 100%;
 	padding: 50px;
 }

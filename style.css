@@ -13,13 +13,10 @@ background-size: cover;
 }
 
 .product {
-	background-color: #ffffff;
-	margin: 100px;
 	text-align: center;
-  padding:190px 0;
-	width: 500px;
-	height: 500px;
 	border-radius: 10px;
+	line-height: 150%;
+	font-size: 150%;
 }
 
 .about-header{

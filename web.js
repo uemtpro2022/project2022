@@ -36,4 +36,13 @@ starMaker(30)
 window.onload = function() {
     const spinner = document.getElementById('loading');
     spinner.classList.add('loaded');
- }
+}
+
+$(function() {
+    $('#back a').on('click',function(event){
+      $('body, html').animate({
+        scrollTop:0
+      }, 100);
+      event.preventDefault();
+    });
+  });

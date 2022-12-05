@@ -601,8 +601,13 @@ margin-top: 3em;
 /*=======================================
 　SNSBOX　終わり
 ========================================*/
+
+.icon{
+	text-shadow: 0 0 6px #000;
+}
+
 a.fa-tumblr{
-	color: black;
+	color: #fff;
 	text-decoration: none;
 }
 

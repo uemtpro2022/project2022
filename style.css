@@ -12,13 +12,25 @@ background-position:50% 50%;
 background-size: cover;
 }
 
+.talk{
+	/* text-align: right; */
+}
 .product {
-	text-align: center;
+	/* text-align: center; */
 	border-radius: 10px;
-	line-height: 150%;
+	line-height: 200%;
 	font-size: 150%;
 }
 
+#product-p{
+	padding:50px;	
+}
+
+#product-t{
+	font-size:200%;
+    font-weight:bold;
+	padding-left:50px;
+}
 .about-header{
   padding-top: 0%;
   margin-top: 0%;
@@ -82,13 +94,17 @@ z-index: 1000;
 }
 
 /*ローディング終わり*/
+/*product&member background*/
+.productmemberbg {
+	border-radius: 30px;
+}
 
 /*大見出し*/
 h1 {
   padding: 1rem 2rem;
   color: #fff;
   background: #015dac;
-  background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%);
+  /* background-image: radial-gradient(#0175d5 13%, transparent 13%), radial-gradient(#0175d5 13%, transparent 13%); */
   background-size: 50px 50px;
   background-position: 0 0, 25px 25px;
 	border-radius: 30px;
@@ -147,10 +163,10 @@ padding-top:50px;
 text-align: center;
 font-size: 180%;
 }
-span{
+/* span{
 	font-size: 190%;
 	font-weight: 700;
-}
+} */
 
 h3.right{
 padding:30px 40px;
@@ -302,8 +318,10 @@ color:#fff;
 	margin: 0 auto;
 }
 .navbar{
-	background-color: transparent;
-	background-color: transparent;
+	background-color: #7094de;
+	box-shadow: 2px 2px 3px #a7bdea;
+
+
 	color:#ffffff;
 	font-size: large;
 }
@@ -395,7 +413,19 @@ font-family: 'HanziPen SC',sans-serif;
 font-size:200%;
 font-weight:bold
 }
-
+#initial-t {
+	font-size:150%;
+	font-weight:bold
+	}
+#initial {
+	font-size:150%;
+	font-weight:bold
+	}
+#initial2 {
+	font-size:150%;
+	font-weight:bold;
+	color:#015dac
+	}
 #about-1{
 margin-top: 3em;
 }

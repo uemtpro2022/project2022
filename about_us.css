@@ -1,6 +1,6 @@
 .about-c{
-  margin: 50px;	
-  padding: 50px 50px 50px 50px;
+  /* margin: 50px;	
+  padding: 50px 50px 50px 50px; */
 }
 
 #subtitle-parent {
@@ -31,11 +31,11 @@
 	-webkit-text-stroke: 1px #000;
 }
 
-.about-p{
+#about-p{
 	color: #fff;
 	/* width:600px; */
 	line-height:200%;
-	/* margin: 100px 100px 100px 100px; */
+	/* margin: 0 0 200px 150px; */
 	font-size:200%;
     font-weight:200%;
 	

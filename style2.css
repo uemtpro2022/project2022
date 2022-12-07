@@ -1,0 +1,17 @@
+.icon{
+	text-shadow: 0 0 6px #000;
+}
+
+a.fa-tumblr{
+	color: #fff;
+	text-decoration: none;
+}
+
+#back {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+#back img {
+  width: 50px;
+}

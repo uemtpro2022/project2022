@@ -15,3 +15,9 @@ a.fa-tumblr{
 #back img {
   width: 50px;
 }
+
+.carousel {
+	margin: auto;
+	width: 640px;
+	height: 360px;
+}

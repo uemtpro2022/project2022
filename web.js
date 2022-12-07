@@ -40,9 +40,9 @@ window.onload = function() {
 
 $(function() {
     $('#back a').on('click',function(event){
-      $('body, html').animate({
+        $('body, html').animate({
         scrollTop:0
-      }, 100);
-      event.preventDefault();
+        }, 100);
+        event.preventDefault();
     });
-  });
+});

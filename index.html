@@ -1,107 +1,118 @@
 <!doctype html>
 <html lang="ja">
-  <head>
 
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css"><!--css-->
-    <link rel="stylesheet" type="text/css" href="style2.css">
-    <link rel="stylesheet" type="text/css" href="about_us.css">
-    <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>UEMATSU PROJECT2022</title>
-  </head>
-  <body>
-    <!-- ローディング画面 -->
-    <div id="loading">
-      <div class="spinner"></div>
-    </div>
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light borderless">
-      <div class="container-fluid" style="background-color: transparent;" >
-        <a class="navbar-brand" href="#"><img src="./img/logo.jpg" class="rounded shadow-sm" style="width: 50px; height: 50px;"></a>
-        <h4 id="title">上松プロジェクト２０２２</h4>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
-          aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-          <div class="navbar-nav">
-            <ul class="gnavi">
-              <li><a href="#aboutus"class="nav-link active" aria-current="page" style="color:#D1E9FF">About</a></li>
-              <li><a href="mvm.html"class="nav-link" style="color:#D1E9FF">MVM</a></li>
-              <li><a href="#schedule"class="nav-link" style="color:#D1E9FF">Activity</a></li>
-              <li><a href="#members"class="nav-link" style="color:#D1E9FF">Members</a></li>
-            </ul>
-          </div>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!--css-->
+  <link rel="stylesheet" type="text/css" href="style2.css">
+  <link rel="stylesheet" type="text/css" href="about_us.css">
+  <link href="https://use.fontawesome.com/releases/v6.2.1/css/all.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+	<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+	<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <title>UEMATSU PROJECT2022</title>
+</head>
+
+  <!-- ローディング画面 -->
+  <div id="loading">
+    <div class="spinner"></div>
+  </div>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light borderless">
+    <div class="container-fluid" style="background-color: transparent;">
+      <a class="navbar-brand" href="#"><img src="./img/logo.jpg" class="rounded shadow-sm"
+          style="width: 50px; height: 50px;"></a>
+      <h4 id="title">上松プロジェクト２０２２</h4>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+          <ul class="gnavi">
+            <li><a href="#aboutus" class="nav-link active" aria-current="page" style="color:#D1E9FF">About</a></li>
+            <li><a href="mvm.html" class="nav-link" style="color:#D1E9FF">MVM</a></li>
+            <li><a href="#schedule" class="nav-link" style="color:#D1E9FF">Activity</a></li>
+            <li><a href="#members" class="nav-link" style="color:#D1E9FF">Members</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
+    </div>
+  </nav>
 
-    <div class="About" id="about">
-      <div style="text-align: center;"class="about-header">
-        <img src="img/headernew.jpg" width="80%",height="80%">
-      </div>
-      <!--<h3 class="left" style="color: #D1E9FF" >
+  <div class="About" id="about">
+    <div style="text-align: center;" class="about-header">
+      <img src="img/headernew.jpg" width="80%" ,height="80%">
+    </div>
+    <!--<h3 class="left" style="color: #D1E9FF" >
         上松プロジェクトでは</h3>-->
-      <!-- <h3 class="middle" style="color: #D1E9FF" >
+    <!-- <h3 class="middle" style="color: #D1E9FF" >
         <span style="color: #FFFF00">「いつでもそばにいる」</span></h3>
       <h3 class="right" style="color: #D1E9FF" >
         寄り添ってくれる"Mate"
       </h3> -->
-    </div>
+  </div>
 
-    <!--カルーセルのためのコード-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-        <!--<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>-->
+  <!--カルーセルのためのコード-->
+  <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+        aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+        aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+        aria-label="Slide 3"></button>
+      <!--<button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>-->
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/carousel4-1.PNG" class="d-block w-100" alt="ヘッダー">
+        <div class="carousel-caption d-none d-md-block">
+          <p></p>
+        </div>
       </div>
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="img/carousel4-1.PNG" class="d-block w-100" alt="ヘッダー">
-          <div class="carousel-caption d-none d-md-block">
-            <p></p>
-          </div>
-        </div>
-        <div class="carousel-item">
-          <img src="img/carousel2.jpg" class="d-block w-100" alt="遊びの風景">
-        </div>
-        <div class="carousel-item">
-          <img src="img/carousel3.jpg" class="d-block w-100" alt="遊びの風景２">
-        </div>
-        <!--<div class="carousel-item">
+      <div class="carousel-item">
+        <img src="img/carousel2.jpg" class="d-block w-100" alt="遊びの風景">
+      </div>
+      <div class="carousel-item">
+        <img src="img/carousel3.jpg" class="d-block w-100" alt="遊びの風景２">
+      </div>
+      <!--<div class="carousel-item">
           <img src="img/carousel4-1.PNG" class="d-block w-100" alt="遊びの風景3">
         </div>-->
-      </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
     </div>
-    <!--カルーセル終わり-->
-    <div class="about-c" id="aboutus">
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+      data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+  <!--カルーセル終わり-->
+  <div class="about-c" id="aboutus">
 
     <div class="row">
       <div class="col-md-2 "></div>
-      <div class= "col-md-8" id="subtitle-parent">
+      <div class="col-md-8" id="subtitle-parent">
         <h3 class="about-us">ABOUT Us</h3>
         <span class="subtitle-bg">ABOUT</span>
       </div>
-      
+
     </div>
 
-      <!-- <h3 class ="about-p ">
+    <!-- <h3 class ="about-p ">
         上松プロジェクトは<br>
         「いつでもそばにいる」<br>
         温かみのある暮らしを提供できる<br>
@@ -118,7 +129,7 @@
 
 
 
-      <!-- <div class="row ">
+    <!-- <div class="row ">
         <div class="col-md-2 "></div>
         <div class="col-md-8 ">
           <div class="about-p" >
@@ -133,27 +144,32 @@
         <div class="col-md-2"></div>
       </div> -->
 
-    </div>
+  </div>
 
-    <div class="container" >
-      <div class="Aboutus">
+  <div class="container">
+    <div class="Aboutus">
 
-        <div class="row " id="about-p">
-          <div class="col "></div>
-          <div class="col-md-6 ">
-            <div class="about-p" >
+      <div class="row " id="about-p">
+        <div class="col "></div>
+        <div class="col-md-6 ">
+          <div class="about-p">
             <h4>
               <h5 id="initial-t"><span>上松プロジェクト</span>は</h5>
               <strong>「いつでもそばにいる」</strong><br>
               温かみのある暮らしを提供できる<br>
               プロダクト<strong>「My Voice Mate」</strong>(MVM)を実装することを目標に活動しています。
             </h4>
-            </div>
           </div>
-          <div class="col"></div>
         </div>
-        <button onclick="location.href='mvm.html'">ここをクリックするとsample.htmlページに移動します</button>
-
+        <div class="col"></div>
+      </div>
+      <div class="bottom">
+        <div class="row">
+          <div class="col-md-8"></div>
+          <div class="col-md-4">
+            <a href="mvm.html" class="btn btn--orange btn--cubic btn--shadow">MVMについて詳しく</a </div>
+          </div>
+        </div>
 
         <!-- <div class="row">
           <div class="col-md-6">
@@ -207,196 +223,159 @@
             <p><img src="./img/itudemosoba.png" class="rounded img-fluid"></p>
           </div>
         </div> -->
-      </div>
+      <!-- </div> -->
 
-    <div class="productmemberbg" style="background-color: #D1E9FF">
-      <hr class="Making" id="product" style="background-color: #D1E9FF ">
+      <div class="productmemberbg" style="background-color: #D1E9FF">
+        <hr class="Making" id="product" style="background-color: #D1E9FF ">
         <!-- <h1>Product</h1> -->
 
-        <!-- <div class="row " >
-          <div class="col "></div>
-          <div class="col-md-8 ">
-            <div class="about-p" >
-            <h4 style="text-align: center">
-              「My Voice Mate」は
-               <strong id="initial">Mate</strong>
-              として、<br>
-              ユーザーに気軽に気持ちを共有してもらうために、<br>
-              ハグをしたり撫でたりなどの接触や表情の変化といった<br>
-              非言語コミュニケーションや会話によるコミュニケーションを<br>
-              感圧・加速度センサー、音声認識・音声合成、<br>
-              表情アニメーションなどの技術で可能にし、<br>
-    　　　　　　友達と話しているような感覚を再現します<br>
-            </h4>
-            </div>
-          </div>
-          <div class="col"></div>
-        </div> -->
-
-        <!-- <div class="sensor">
-
-          <h2 id="product-t"><span id="initial2">撫でられると喜びます</span></h2>
-          <div class="row">
-            <div class="col-md-6" >
-              <p class="col-md-5 product w-100 " id="product-p">
-                ​​センサーは頭頂部、耳、背中に１つずつついていて
-                <br>
-                あなたが撫でると嬉しそうな顔をしたり耳をつねられると
-                <br>
-                嫌そうな顔をしたりします。
-                <br>
-                また加速度センサーが内蔵されていてあなたからの抱っこに反応します。
-
-              </p>
-            </div>
-            <div class="col-md-6" >
-              <p><img src="./img/sensor.png" class="rounded img-fluid" style="position: relative;transform: scale(1.5);"></p>
-            </div>
-          </div>
-        </div>
-        <div class="talk">
-          <h2 id="product-t" style="text-align: right; padding-right:50px;"><span id="initial2">あなたからの「おはよう」に返事をします</span></h2>
-          <div class="row">
-            <div class="col-md-6"  >
-              <p><img src="./img/kaiwa.png" class="rounded img-fluid" style="position: relative;transform: scale(1.5);"></p>
-            </div>
-            <div class="col-md-6" >
-              <p class="col-md-5 product w-100 text-left" id="product-p">
-                音声認識・音声合成の技術を用いて
-                <br>
-               
-                あなたの声を正確に聞き取って状況に応じた返事をします。<br>
-              
-                事前にプログラムされたものを再生しているだけではなく、<br>
-                
-                システムにAIによるディープラーニングを組み込んでいる音声合成エンジンを通して、<br>
-               
-                様々な特徴を持っているボイスを生成します。
-                <br>
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="face">
-          <h2 id="product-t"><span id="initial2">あなたからのアクションで様々な表情をします</span></h2>
-          <div class="row">
-            <div class="col-md-6" >
-              <p class="col-md-5 product w-100 " id="product-p">
-                喜怒哀楽を演出できる目で非言語コミュニケーションを可能にします。<br>
-               
-                音声言語を用いた情報伝達だけではなく､<br>
-                表情や視線など情報を合わせて用いることにより､
-               
-                より円滑なコミュニケーションを行います。
-                
-              </p>
-            </div>
-            <div class="col-md-6" >
-              <p><img src="./img/face.png" class="rounded img-fluid" style="position: relative;transform: scale(1.5);"></p>
-            </div>
-          </div>
-        </div>
-
-        <div class="app">
-          <h2 id="product-t" style="text-align: right; padding-right:50px;"><span id="initial2">アプリ</span>でどんな時もあなたと一緒にいます</h2>
-          <div class="row">
-            <div class="col-md-6"  >
-              <p><img src="./img/app.png" class="rounded img-fluid" style="position: relative;transform: scale(1);"></p>
-            </div>
-            <div class="col-md-6" >
-              <p class="col-md-5 product w-100 text-left" id="product-p">
-                アプリではMVMがやって来た日に、名前をつけたり
-                
-                <br>
-                お互いに性格、趣味などを共有したりすることができます。
-               
-                <br>
-              
-                またMVMの魂をスマホの中に移すことにより<br>
-                
-                いつでも、どこでもMVMと行動して、MVMと一緒に過ごした日々をダイアログで見ることができます。
-                <br>
-                そういった機能があるアプリの開発を目指しfigmaでのプロトタイプを製作しました。
-                
-                <br>
-                
-              </p>
-            </div>
-          </div>
-        </div> -->
 
 
 
         <!-- <hr class="featurette-divider"> -->
-          <div class="page-header" id="schedule" style="background-color: #D1E9FF">
-            <h1>Activity</h1>
-            <h4 id="timeline" class="mb-5 tl_komidashi"></h4>
-          </div>
+        <div class="page-header" id="schedule" style="background-color: #D1E9FF">
+          <h1>Activity</h1>
+          <h4 id="timeline" class="mb-5 tl_komidashi"></h4>
+        </div>
         </hr>
         <ul class="timeline" style="background-color: #D1E9FF">
           <li>
             <div class="timeline-badge"></div>
             <div class="timeline-panel">
-          <div class="timeline-heading">
-            <h4 class="timeline-title">3,4月 - 自己紹介、好きプレゼン</h4>
-            <p><small class="text-muted"></small></p>
-          </div>
-        <div class="timeline-body">
-          <p>アイスブレイクのために自己紹介や自分の好きなものを一人何分間話す「好きプレゼン」を行ってメンバー同士の理解を深め、最終成果物の見通しについて話し合った。</p>
-        </div>
-        </div>
+              <div class="timeline-heading">
+                <h4 class="timeline-title">3,4月 - 自己紹介、好きプレゼン</h4>
+                <p><small class="text-muted"></small></p>
+              </div>
+              <div class="timeline-body">
+                <p>アイスブレイクのために自己紹介や自分の好きなものを一人何分間話す「好きプレゼン」を行ってメンバー同士の理解を深め、最終成果物の見通しについて話し合った。</p>
+              </div>
+            </div>
           </li>
           <li class="timeline-inverted">
-          <div class="timeline-badge"></div>
+            <div class="timeline-badge"></div>
             <div class="timeline-panel">
               <div class="timeline-heading">
                 <h4 class="timeline-title">5月 - アンケート調査、ペルソナ決定</h4>
               </div>
-            <div class="timeline-body">
-              <p>アンケート調査では寂しいと感じる瞬間1位は"話し相手がいない時"で、そのアンケートの結果をもとに仮ペルソナを趣味を共有できる人がいない一人暮らしの女子大生に決定した。</p>
+              <div class="timeline-body">
+                
+                <p>アンケート調査では寂しいと感じる瞬間1位は"話し相手がいない時"で、
+                  そのアンケートの結果をもとに仮ペルソナを趣味を共有できる人がいない一人暮らしの女子大生に決定した。</p>
+                <!-- クリックしたらモーダルを表示するボタン -->
+                <br>
+                <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">詳しく
+                </button>
+
+                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                          &times;
+                        </button> -->
+                        <h4 class="modal-title" id="myModalLabel">
+                        アンケート結果
+                        </h4>
+                      </div>
+                      <div class="modal-body">
+                        <p><img src="./img/anke-to.png" class="rounded img-fluid" style="position: relative;transform: scale(1);"></p>
+                        人が寂しいと感じることについてアンケート調査を実施しました。<br>
+                        調査の結果、寂しいと感じる時については、「話し相手がいない時」が一位になりました。<br>
+                        またその理由としては「なんとなく虚無感を覚える」、
+                        「誰とも話せないから」などが挙げられていました。」
+                      </div>
+                      <div class="modal-footer">
+                        <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                        </button>
+                        <button type="button" class="btn btn-primary">
+                          提交更改
+                        </button> -->
+                      </div>
+                    </div><!-- /.modal-content -->
+                  </div><!-- /.modal -->
+                </div>
+                
+
+
+
+
+              </div>
             </div>
-          </div>
           </li>
           <li>
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">6月 - 教員相談会、プロトタイプ製作</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">6月 - 教員相談会、プロトタイプ製作</h4>
+              </div>
               <div class="timeline-body">
-                <p>大中小3つのサイズに分かれてMVMのプロトタイプを作成し、そのプロトタイプについて教員相談会でアドバイスをもらい、今後の実装方針を固めた。</p>
+                <p>大中小3つのサイズに分かれてMVMのプロトタイプを作成し、
+                  そのプロトタイプについて教員相談会でアドバイスをもらい、今後の実装方針を固めた。</p>
+                  <br>
+                  <button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">詳しく
+                  </button>
+  
+                  <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <!-- <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                            &times;
+                          </button> -->
+                          <h4 class="modal-title" id="myModalLabel">
+                          大中小プロトタイプについて
+                          </h4>
+                        </div>
+                        <div class="modal-body">
+                          <p><img src="./img/L.PNG" class="rounded img-fluid" style="position: relative;transform: scale(1);"></p>
+                          <p><img src="./img/M.PNG" class="rounded img-fluid" style="position: relative;transform: scale(1);"></p>
+                          <p><img src="./img/S.PNG" class="rounded img-fluid" style="position: relative;transform: scale(1);"></p>
+
+                        </div>
+                        <div class="modal-footer">
+                          <!-- <button type="button" class="btn btn-default" data-dismiss="modal">关闭
+                          </button>
+                          <button type="button" class="btn btn-primary">
+                            提交更改
+                          </button> -->
+                        </div>
+                      </div><!-- /.modal-content -->
+                    </div><!-- /.modal -->
+                  </div>
               </div>
             </div>
           </li>
 
-           <li class="timeline-inverted">
+          <li class="timeline-inverted">
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">7月 - 中間発表</h4>
-                </div>
-            <div class="timeline-body">
-              <p>大中小3つのサイズのプロトタイプについてDS2を借りて対面で集まりながら配信形式の発表を行った。</p>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">7月 - 中間発表</h4>
+              </div>
+              <div class="timeline-body">
+                <p>大中小3つのサイズのプロトタイプについてDS2を借りて対面で集まりながら配信形式の発表を行った。</p>
+              </div>
             </div>
-          </div>
           </li>
           <li>
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">8,9月 - シナリオの再検討</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">8,9月 - シナリオの再検討</h4>
+              </div>
               <div class="timeline-body">
-                <p>中間発表を終えて、ここまでの活動を通しての反省を行った。また今後の実装方針を固めるためシナリオの再検討を行い、それぞれが実装したい機能を洗い出し、分類をした上で「ハグすると問いかけてくる」機能、「話しかけられたことに対して定型文を返す。」機能の実装を始めた。</p>
+                <p>
+                  中間発表を終えて、ここまでの活動を通しての反省を行った。また今後の実装方針を固めるためシナリオの再検討を行い、それぞれが実装したい機能を洗い出し、分類をした上で「ハグすると問いかけてくる」機能、「話しかけられたことに対して定型文を返す。」機能の実装を始めた。
+                </p>
               </div>
             </div>
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">10月 -学部内ワークショップ開催</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">10月 -学部内ワークショップ開催</h4>
+              </div>
               <div class="timeline-body">
                 <p>MVMの想定するシナリオが適したものであるかや大中小どのサイズが適しているか、実際の反応を見ながら確認するため、ネットワーク情報学部の学生を対象にワークショップを開催した。</p>
               </div>
@@ -404,10 +383,10 @@
           </li>
           <li>
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">11月 -最終成果物の製作</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">11月 -最終成果物の製作</h4>
+              </div>
               <div class="timeline-body">
                 <p>ワークショップで得られたアンケートの内容や体験してくださった方の反応から最終成果物の方針を決め、ぬいぐるみ班、中間班、アプリ班の３つに分かれて実装を行った。</p>
               </div>
@@ -415,23 +394,23 @@
           </li>
           <li class="timeline-inverted">
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">12月 -最終発表</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">12月 -最終発表</h4>
+              </div>
               <div class="timeline-body">
                 <p>最終発表の準備を行い、最後の締め括りとして発表を行った。</p>
               </div>
             </div>
           </li>
           <li>
-           
+
           <li class="timeline-inverted">
             <div class="timeline-badge"></div>
-              <div class="timeline-panel">
-                <div class="timeline-heading">
-                  <h4 class="timeline-title">今後の予定</h4>
-                </div>
+            <div class="timeline-panel">
+              <div class="timeline-heading">
+                <h4 class="timeline-title">今後の予定</h4>
+              </div>
               <div class="timeline-body">
                 <p>２</p>
               </div>
@@ -444,7 +423,7 @@
             <div class="col">
               <div class="card-fluid shadow-sm rounded" style="background-color: #ffffff">
                 <img src="img/adati_size.png" id="member1" class="class-img-top img-fluid rounded ">
-                <div class="card-body rounded" >
+                <div class="card-body rounded">
                   <h5>ニックネーム：あらは</h5>
                   <p class="card-text">プログラム：CD
                     <br>
@@ -487,7 +466,7 @@
                   <p class="card-text">プログラム：MC
                     <br>
                     推し！：RAISE A SUILENのレイヤさん
-                  
+
                   </p>
                 </div>
               </div>
@@ -558,35 +537,38 @@
             </div>
           </div>
         </div>
-    </div>
-      
-
       </div>
+
+
     </div>
-    <!-- class="Members"終わり -->
-    <footer>
-      <div class="mx-auto text-center" style="width:200px;">
-        <a class="fa-brands fa-tumblr fa-lg icon" href="https://uemtpro2022.tumblr.com/"></a>
-      </div>
-      <p class="mx-auto" style="width:200px;">上松プロジェクト2022 Company, Inc.</p>
-    </footer>
-    <span id="back">
-      <a href="#">
-        <img src="img/arrow.png" alt="">
-      </a>
-    </span>
-    <!-- Optional JavaScript; choose one of the two! -->
+  </div>
+  <!-- class="Members"終わり -->
+  <footer>
+    <div class="mx-auto text-center" style="width:200px;">
+      <a class="fa-brands fa-tumblr fa-lg icon" href="https://uemtpro2022.tumblr.com/"></a>
+    </div>
+    <p class="mx-auto" style="width:200px;">上松プロジェクト2022 Company, Inc.</p>
+  </footer>
+  <span id="back">
+    <a href="#">
+      <img src="img/arrow.png" alt="">
+    </a>
+  </span>
+  <!-- Optional JavaScript; choose one of the two! -->
 
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js" integrity="sha384-Atwg2Pkwv9vp0ygtn1JAojH0nYbwNJLPhwyoVbhoPwBhjQPR5VtM2+xf0Uwh9KtT" crossorigin="anonymous"></script>
     -->
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <script src="jquery.min.js"></script>
-    <script src="web.js"></script>
-  </body>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <script src="jquery.min.js"></script>
+  <script src="web.js"></script>
+</body>
+
 </html>

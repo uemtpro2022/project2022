@@ -1,6 +1,6 @@
 * {
 	box-sizing: border-box;
-	font-family: 'HanziPen SC',sans-serif;;
+	/* font-family: 'HanziPen SC',sans-serif; */
 	/*'TsukuBRdGothic-Regular',sans-serif;;*/
 }
 
@@ -188,7 +188,7 @@ a{
 }
 
 h4.title{
-font-family: 'HanziPen SC',sans-serif;
+/* font-family: 'HanziPen SC',sans-serif; */
 font-weight:bold;
 font-size: auto;
 }
@@ -407,7 +407,8 @@ line-height:200%;
 }
 h4{
 line-height:200%;
-font-family: 'HanziPen SC',sans-serif;
+/* font-family: 'HanziPen SC',sans-serif; */
+font-size: 200%;
 }
 #initial span{
 font-size:200%;

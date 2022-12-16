@@ -77,5 +77,6 @@ a.btn--shadow {
 }
 
 .ws{
-  font-size: 150%;
+  text-align: center;
+  margin: 20px 0 0 0;
 }

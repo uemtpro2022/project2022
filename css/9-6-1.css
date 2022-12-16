@@ -6,6 +6,10 @@
 	display: none;
 }
 
+#info2{
+	display: none;
+}
+
 /*モーダルの横幅を変更したい場合*/
 .modaal-container{
     max-width: 600px;
